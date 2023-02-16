@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Loadboard Plus</title>
+  </head>
+
+  <body>
+    <main class="wrapper isLoading">
+      <div class="app-header">
+        <div class="app-header-logo">
+          <img src="./images/logo.svg" alt="Logo" />
+          <h1>LoadBoard Plus</h1>
+        </div>
+        <p>Welcome please verify your email address</p>
+      </div>
+      <div class="content-container">
+        <div class="app-main login">
+          <h2>Verify your email address</h2>
+          <form>
+            <p class="sm-text onSignupP">
+              Please enter OTP code received by email
+              <br /><br />
+            </p>
+            <div class="form-group otpHolder">
+              <input
+                type="text"
+                placeholder=""
+                id="OTP"
+                maxlength="1"
+                required
+              />
+              <input
+                type="text"
+                placeholder=""
+                id="OTP"
+                maxlength="1"
+                required
+              />
+              <input
+                type="text"
+                placeholder=""
+                id="OTP"
+                maxlength="1"
+                required
+              />
+              <input
+                type="text"
+                placeholder=""
+                id="OTP"
+                maxlength="1"
+                required
+              />
+            </div>
+            <span class="text-error"> </span>
+            <button class="button form-submit" type="submit">Continue</button>
+          </form>
+          <a href="#" class="timerTarget sm-text forgot-password">
+            Didn't receive OTP ? 1:00</a
+          >
+          <a href="./login.html" class="sm-text forgot-password"> Login ?</a>
+        </div>
+      </div>
+
+      <div class="bottom-sc"></div>
+    </main>
+    <script src="../js/jquery.js"></script>
+    <script src="./js/activate.js"></script>
+    <script src="./js/common.js"></script>
+  </body>
+</html>

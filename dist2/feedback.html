@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Loadboard Plus</title>
+  </head>
+
+  <body>
+    <main class="wrapper feedback-sc isLoading">
+      <div class="app-header">
+        <div class="app-header-logo">
+          <img src="./images/Feedback.svg" alt="Logo" />
+        </div>
+        <p>
+          Send feedback below or <br />
+          support@loadboardplus.com
+        </p>
+      </div>
+      <div class="content-container">
+        <div class="app-main">
+          <!--FeedBack Form-->
+          <div class="feedback">
+            <div>
+              <p>Feedback helps us improve!</p>
+              <p>
+                Any comments, bugs, suggestions please type it in the box below.
+              </p>
+            </div>
+            <form>
+              <textarea class="feedbackMessage" required></textarea>
+              <div class="buttons-wrapper">
+                <button class="sm-button btnSubmit" type="submit">send</button>
+                <button class="sm-button btnCancel" type="button">
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </div>
+          <!--FeedBack Form-->
+          <!--FeedBack Message-->
+          <div class="feedback-message">
+            <img src="./images/check-icon.svg" alt="check-icon" />
+            <h1>Message Sent Successfully</h1>
+          </div>
+          <!--FeedBack Message-->
+        </div>
+      </div>
+
+      <div class="bottom-sc">
+        <a href="./login.html" class="logout">Logout</a>
+      </div>
+    </main>
+    <script src="../js/jquery.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/feedback.js"></script>
+    <script src="./js/common.js"></script>
+  </body>
+</html>

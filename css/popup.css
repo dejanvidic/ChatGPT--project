@@ -1,0 +1,28 @@
+html {
+	max-width: 320px !important;
+	max-height: 480px !important;
+	height: 150px;
+	overflow: hidden;
+}
+body.popup {
+	max-width: 320px;
+	min-width: 320px;
+	overflow: hidden;
+	font-family: 'Roboto', sans-serif;
+}
+.e-btn--3d{
+  background-color: #82b440;  
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  display:block;
+  margin:15px;
+}
+
+.e-btn--3d:focus,
+.e-btn--3d:hover {
+  background-color: #7aa93c;
+  color: White;
+}
+

@@ -1,0 +1,81 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "name": "Loadboard Plus",
+  "version": "1.0.11",
+  "description": "Pro tools for DAT Power & Truckers Edge loadboards",
+  "manifest_version": 3,
+  "author": "loadboardplus.com",
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "action": {
+    "default_icon": "img/icon128.png",
+    "default_title": "Loadboard Plus",
+    "default_popup": "/dist2/index.html"
+  },
+  "icons": {
+    "128": "img/icon128.png",
+    "16": "img/icon16.png",
+    "48": "img/icon48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://app.loadboardplus.com/*"],
+      "js": ["js/reloaduser.js"]
+    },
+    {
+      "js": [
+        "js/jquery.js",
+        "js/toastr.min.js",
+        "js/multi-select-min.js",
+        "js/states.js",
+        "js/content.js"
+      ],
+      "css": ["css/toastr.min.css"],
+      "run_at": "document_start",
+      "matches": [
+        "https://power.dat.com/search/loads*",
+        "https://power.dat.com/postings/trucks*"
+      ]
+    },
+    {
+      "js": [
+        "js/jquery.js",
+        "js/toastr.min.js",
+        "js/multi-select-min.js",
+        "js/states.js",
+        "js/truckersEdge.js"
+      ],
+      "css": ["css/truckersEdge.css", "css/toastr.min.css"],
+      "run_at": "document_end",
+      "matches": ["https://truckersedge.dat.com/*"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "img/*",
+        "css/content.css",
+        "js/injected.js",
+        "/*",
+        "/dist2/*"
+      ],
+      "matches": [
+        "https://truckersedge.dat.com/*",
+        "https://power.dat.com/*",
+        "https://app.loadboardplus.com/*"
+      ],
+      "extension_ids": [],
+      "use_dynamic_url": true
+    }
+  ],
+  "permissions": ["webRequest", "tabs", "storage", "scripting"],
+  "host_permissions": [
+    "https://api.loadboard.plus/*",
+    "https://power.dat.com/*",
+    "https://truckersedge.dat.com/*",
+    "https://freight.api.prod.dat.com/trucker/api/v1/freightMatching/search/*"
+  ]
+}

@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="../css/custom.css" rel="stylesheet" media="screen">
+	<link href="../css/singUp.css" rel="stylesheet" media="screen">
+	<link href="../css/fontawesome.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="main-wraper">
+		<div class="tab-title">
+			<h6><a href="#"><img src="../img/logo.png" alt=""></a>LoadBoard <span>Plus</span></h6>
+		</div>
+		<div class="box">
+		    <div class="a">
+		        <form action="" class="frm">
+		            <h6 class="title">SIGN-UP</h6>
+		            <input class="inp" type="text" id="email" value="" placeholder="Email Address">
+		            <input class="inp" type="password" id="pwd" value="" placeholder="Password">
+		            <input class="inp" type="password" id="confirmPwd" value="" placeholder="Confirm Password">
+		            <input type="checkbox" class="keep-logged">
+            		<label class="keep-logged-text">Keep me logged in</label>
+            		<label for="chk3" class="froget-pwd">Forgot Password</label>
+		            <input class="inp my-btn" type="button" value="START FREE TRIAL" id="signUp">
+		            <label id="btm"><span class="noAcc">Already have an account? </span>Login here</label>
+		        </form>
+		    </div>
+		</div>
+						<div class="flt-btm-sec">
+							<p class="trial-message">Your currently on a free trial, <a class="checkoutPage" target="_BLANK"
+								style="cursor:pointer;"
+									href="https://app.loadboardplus.com/checkout">purchase
+									a license to continue using.</a></p>
+							<p class="trial-message trial">Time Left in Trial: <span id="trial-days"></span> Days</p>
+							<p class="trial-warning">Your trial has expired, <a target="_BLANK"
+									href="https://billing.loadboard.plus/index.php/order/main/packages/license/?group_id=1">purchase
+									a license to continue using.</a></p>
+						</div>
+
+						<div class="btm-part">
+							<div class="btm-lftt">
+								<!-- <button id="save-options" type="button" class="btn btn-default btn-1">Save</button> -->
+							</div>
+							<div class="flt-btm-right">
+								<ul>
+									<li>
+										<a href="#" title="settings">
+											<i class="fa fa-cog"  style="font-size: 20px; color: #474FFF;"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" title="help">
+											<i class="fa fa-question-circle-o"  style="font-size: 20px; color: #474FFF;"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" title="signout">
+											<i class="glyphicon glyphicon-log-out" style="color: red;"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="tab-modal" id="right">
+			<div class="notification-part">
+				<form action="#" method="POST">
+					<h4>Notification Options</h4>
+
+					<div class="filter-optpart">
+
+						<div class="tab-inner">
+							<p>New window pop up alert</p>
+							<label class="switch">
+								<input type="checkbox" id="popupAlertEnable">
+								<span class="slider round"></span>
+							</label>
+						</div>
+
+						<div class="tab-inner">
+							<p>Alert sound</p>
+							<label class="switch">
+								<input type="checkbox" id="soundEnable">
+								<span class="slider round"></span>
+							</label>
+						</div>
+
+						<div class="tab-inner">
+							<p>Only notify me once</p>
+							<label class="switch">
+								<input type="checkbox" id="notifyOnce">
+								<span class="slider round"></span>
+							</label>
+						</div>
+
+						<div class="tab-inner">
+							<p>Notify me nonstop</p>
+							<label class="switch">
+								<input type="checkbox" id="notifyAll">
+								<span class="slider round"></span>
+							</label>
+						</div>
+
+						<label>Auto email notifications (one per line)</label>
+						<div class="email">
+							<textarea cols="34" rows="6" placeholder="ab@abc.com" id="emailList"></textarea>
+						</div>
+
+						<div class="btm-part">
+							<div class="btm-lftt">
+								<button id="save-notifications" type="button" class="btn btn-default">Save</button>
+							</div>
+							<div class="flt-btm-right">
+								<div id="notification-status">
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Scripts -->
+	<script src="../js/jquery-2.0.3.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/popup.js"></script>
+</body>
+
+</html>

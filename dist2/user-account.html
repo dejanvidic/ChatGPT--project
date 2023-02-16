@@ -1,0 +1,86 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Loadboard Plus</title>
+    <style id="fitContent">
+      html,
+      .wrapper {
+        height: unset;
+        min-height: unset;
+      }
+    </style>
+    <style id="shortPage">
+      body {
+        height: 380px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="wrapper isLoading">
+      <div class="app-header">
+        <div class="app-header-logo">
+          <img src="./images/logo.svg" alt="Logo" />
+          <h1>LoadBoard Plus</h1>
+        </div>
+        <p id="userMail">eralogistics@gmail.com</p>
+      </div>
+      <div class="content-container">
+        <div class="app-main user-account">
+          <h2>Account Status: <span id="accountStatus">Pro</span></h2>
+          <p class="date-text" style="visibility: hidden">
+            Autorenew: <span id="autoRenew">05-27-2021</span>
+          </p>
+          <div class="user-account-list">
+            <a
+              href="#"
+              target="_blank"
+              class="user-account-item subscriptionManageIcon"
+            >
+              <div class="user-account-item-wrapper">
+                <img src="./images/card.svg" alt="icon" />
+                <!-- <p id="managesubs">Manage Billing</p> -->
+              </div>
+              <p id="managePurchase">Manage Subscription<br /></p>
+            </a>
+            <a href="#" class="user-account-item passwordUpdate">
+              <div class="user-account-item-wrapper">
+                <img src="./images/unlock.svg" alt="icon" />
+                <!-- <p>Change Password</p> -->
+              </div>
+              <p>Change Account Password</p>
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCWn28XRty444gGBxpjZL8Aw/videos"
+              target="_blank"
+              class="user-account-item"
+            >
+              <div class="user-account-item-wrapper">
+                <img src="./images/help.svg" alt="icon" />
+                <!--  <p>Youtube Help</p> -->
+              </div>
+              <p>Youtube Tutorials<br /></p>
+            </a>
+            <a href="./feedback.html" class="user-account-item">
+              <div class="user-account-item-wrapper">
+                <img src="./images/settings.svg" alt="icon" />
+                <!-- <p>Let us hear <br />your opinion</p> -->
+              </div>
+              <p>Send Feedback</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-sc">
+        <a href="./login.html" class="logout">Logout</a>
+      </div>
+    </main>
+    <script src="../js/jquery.js"></script>
+    <script src="./js/user-account.js"></script>
+    <script src="./js/common.js"></script>
+  </body>
+</html>

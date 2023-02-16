@@ -1,0 +1,422 @@
+/**
+ * Chrome Extension Twitter Bootstrap 3 Template
+ * Custom CSS
+ *	
+ */
+
+/*body, section {			
+	width: 500px;
+	height: 400px;
+	overflow-x: hidden;
+}
+*/
+/* Basic style tweaks */
+/*section { padding: 5px;}
+.navbar { margin-bottom: 2px; }*/
+
+
+/*=== Custom css ===*/
+body {
+	font-family: Helvetica;
+	font-size: 16px;
+	font-weight: 400;
+	color: #191919;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+button,
+a:focus {
+	outline: none!important;
+}
+
+#body {
+  resize: none;
+}
+.main-wraper {
+	width: 310px;
+  padding: 0px 18px 0px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+}
+
+.email-window {
+	width: 100%;
+  margin: 0 auto;
+}
+
+.panel-heading h3 {
+	font-size: 21px;
+	font-weight: 700;
+	color: #000a14;
+	padding: 5px;
+}
+
+.panel-body p {
+	font-size: 15px;
+}
+
+.panel-body a {
+	transition: 0.2s all ease;
+	-webkit-transition: 0.2s all ease;
+}
+
+.panel-body button {
+	font-size: 18px;
+	font-weight: 400;
+	color: #FFF;
+	background: #474FFF;
+	display: inline-block;
+	outline: none;
+	box-shadow: none;
+	padding: 12px 25px;
+	border: none;
+	border-radius: 8px;
+	transition: 0.2s all ease;
+	-webkit-transition: 0.2s all ease;
+}
+
+.panel-body .btn-1 {
+	padding: 12px 30px;
+}
+
+.panel-body button:hover {
+	background: #474FFF;
+	color: #FFF;
+	opacity: .9;
+}
+
+.checkbox {
+	margin: 8px 0;
+}
+
+.input-group input {
+	width: 100%;
+	display: block;
+	padding: 6px 8px;
+	height: initial;
+	font-size: 12px;
+}
+
+.input-group {
+	margin-bottom: 8px;
+}
+
+.input-group span {
+	font-size: 12px;
+}
+
+.pnlbdy-2 label {
+	margin-bottom: 8px;
+}
+
+.main-wraper input,
+.main-wraper textarea {
+	outline: none;
+}
+
+.main-wraper input:focus,
+.main-wraper textarea:focus {
+	outline: none;
+	box-shadow: none;
+	border-color: #C5C5C5;
+}
+
+.email input,
+.email textarea {
+	font-size: 12px;
+	padding: 12px 10px;
+	height: initial;
+  resize: none;
+}
+
+#save-filters,
+#save-options, #save-notifications {
+  background: #474FFF;
+  color: #FFF;
+  padding: 7px 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  transition: 0.2s all ease;
+  -webkit-transition: 0.2s all ease;
+  maringin-top: 5px;
+}
+
+#save-filters:hover,
+#save-options:hover {
+  opacity: .9;
+}
+
+#save-options {
+  padding: 6.5px 18px;
+}
+
+.tab-title h6 {
+  background: transparent;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0C0905;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.tab-title h6 span {
+	font-weight: 400;
+}
+
+.tab-title h6 a img {
+  max-width: 31px;
+}
+
+.tab-links {
+  display: flex;
+  margin-bottom: -3px;
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+.tab-links li {
+  width: 50%;
+  list-style: none;
+}
+
+.tab-links li a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #707070;
+  background: #F6F6F6;
+  display: block;
+  text-align: center;
+  padding: 7.5px;
+  border-radius: 8px;
+  transition: all linear 0.15s;
+  text-decoration: none;
+}
+
+.tab-links li.active a,
+.tab-links li a:hover {
+  background: #474FFF;
+  color: #FFF;
+}
+
+.tab-links .left {
+  padding-right: 5px;
+}
+
+.tab-links .right {
+  padding-left: 5px;
+}
+
+.tab-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-part h4, .notifcation-part h4 {
+  font-size: 15.5px;
+  font-weight: 400;
+  color: #000A14;
+  position: relative;
+  margin-top: 18px;
+}
+
+.filter-part h4::after {
+  content: "";
+  display: block;
+  width: 63%;
+  height: 1px;
+  background: #ddd;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.notification-part h4::after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 1px;
+  background: #ddd;
+  position: absolute;
+  top: 22%;
+  right: 0;
+}
+
+.filter-optpart {
+	padding-top: 2px;
+}
+
+.filter-optpart label {
+	font-size: 13.5px;
+}
+
+.filter-part .flt-heda2::after {
+  width: 50%;
+}
+
+.tab-inner p {
+  font-size: 13.5px;
+  font-weight: 400;
+  color: #707070;
+  margin-bottom: 0;
+}
+
+.tab-inner {
+  margin: 5px 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 23px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 19px;
+  left: 2px;
+  bottom: 2.3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.tab-inner input:checked + .slider {
+  background-color: #474FFF;
+}
+
+.tab-inner input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+.tab-inner input:checked + .slider:before {
+  -webkit-transform: translateX(12.5px);
+  -ms-transform: translateX(12.5px);
+  transform: translateX(12.5px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.filter-part [type="reset"] {
+    width: 100%;
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFF;
+    padding: 12px 15px;
+    background: #474FFF;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    margin: 40px 0 10px;
+    transition: 0.2s all ease;
+    -webkit-transition: 0.2s all ease;
+}
+
+.filter-part [type="reset"]:hover {
+    opacity: .9;
+}
+
+.btm-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 0px;
+}
+
+.flt-lft p {
+	font-size: 16px;
+	color: #0C0905;
+}
+
+.flt-lft p a {
+	transition: 0.2s all ease;
+	-webkit-transition: 0.2s all ease;
+}
+
+.flt-btm-right ul {
+	padding: 0;
+}
+
+.flt-btm-right ul li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.flt-btm-right ul li img {
+    max-width: 19px;
+}
+
+.flt-btm-sec {
+  padding-top: 3px;
+}
+
+.flt-btm-sec p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #0C0905;
+}
+
+.flt-btm-sec p a:hover {
+  transition: 0.2s all ease;
+  -webkit-transition: 0.2s all ease;
+}
+
+.flt-btm-sec label {
+  font-size: 12px;
+  position: relative;
+  top: -2px;
+}
+
+.copybtn {
+  display: inline-block;
+  margin-left: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.copybtn:hover {
+  background-color: #f5f5f5;
+}

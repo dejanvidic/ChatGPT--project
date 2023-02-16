@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Loadboard Plus</title>
+  </head>
+
+  <body>
+    <main class="wrapper isLoading">
+      <div class="app-header">
+        <div class="app-header-logo">
+          <img src="./images/logo.svg" alt="Logo" />
+          <h1>LoadBoard Plus</h1>
+        </div>
+        <p>Welcome please enter the following details to sign up</p>
+      </div>
+      <div class="content-container">
+        <div class="app-main signup">
+          <h2>Register</h2>
+          <form>
+            <div class="form-group">
+              <img src="./images/message.svg" alt="form-icon" />
+              <input type="email" placeholder="Email" required id="email" />
+            </div>
+            <div class="form-group">
+              <img src="./images/lock.svg" alt="form-icon" />
+              <input
+                type="password"
+                placeholder="Password"
+                id="password"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <img src="./images/lock.svg" alt="form-icon" />
+              <input
+                type="password"
+                placeholder="Confirm password"
+                id="confirmPassword"
+                required
+              />
+            </div>
+            <span class="text-error"> </span>
+            <button type="submit" class="btnSignup">
+              Sign Up & get 7 days free
+            </button>
+          </form>
+          <p class="sm-text">
+            Already have an account? <a href="./login.html">Login</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="bottom-sc"></div>
+    </main>
+    <script src="../js/jquery.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/signup.js"></script>
+    <script src="./js/common.js"></script>
+  </body>
+</html>

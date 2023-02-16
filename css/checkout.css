@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(
+    to bottom,
+    #665151,
+    #846769,
+    #a37e83,
+    #c3969e,
+    #e3aebc
+  );
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title,
+.subtitle {
+  color: #fff;
+  font-size: larger;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.subtitle {
+  color: #eee;
+  font-size: large;
+}
+@keyframes ldio-ki33wig7gp8-r {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+  }
+  0% {
+    transform: scale(0.7000000000000001) rotate(180deg);
+  }
+  25% {
+    transform: scale(0.7000000000000001) rotate(270deg);
+  }
+  50% {
+    transform: scale(0.7000000000000001) rotate(360deg);
+  }
+  75% {
+    transform: scale(0.7000000000000001) rotate(450deg);
+  }
+  100% {
+    transform: scale(0.7000000000000001) rotate(540deg);
+  }
+}
+@keyframes ldio-ki33wig7gp8-z {
+  0%,
+  50%,
+  100% {
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+  }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+@keyframes ldio-ki33wig7gp8-p {
+  0%,
+  50%,
+  100% {
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+  }
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes ldio-ki33wig7gp8-c {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+  }
+  0% {
+    background: #e15b64;
+  }
+  25% {
+    background: #f47e60;
+  }
+  50% {
+    background: #f8b26a;
+  }
+  75% {
+    background: #abbd81;
+  }
+  100% {
+    background: #e15b64;
+  }
+}
+.ldio-ki33wig7gp8 > div {
+  animation: ldio-ki33wig7gp8-r 4s linear infinite;
+  transform-origin: 100px 100px;
+}
+.ldio-ki33wig7gp8 > div > div {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  animation: ldio-ki33wig7gp8-z 1s linear infinite;
+  transform-origin: 200px 200px;
+}
+.ldio-ki33wig7gp8 > div > div div {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #e15b64;
+  transform-origin: 50px 50px;
+}
+.ldio-ki33wig7gp8 > div > div div:nth-child(1) {
+  left: 0px;
+  top: 0px;
+  animation: ldio-ki33wig7gp8-p 1s linear infinite,
+    ldio-ki33wig7gp8-c 4s linear infinite;
+}
+.ldio-ki33wig7gp8 > div > div div:nth-child(2) {
+  left: 100px;
+  top: 0px;
+  animation: ldio-ki33wig7gp8-p 1s linear infinite,
+    ldio-ki33wig7gp8-c 4s linear infinite;
+}
+.ldio-ki33wig7gp8 > div > div div:nth-child(3) {
+  left: 0px;
+  top: 100px;
+  animation: ldio-ki33wig7gp8-p 1s linear infinite,
+    ldio-ki33wig7gp8-c 4s linear infinite;
+}
+.ldio-ki33wig7gp8 > div > div div:nth-child(4) {
+  left: 100px;
+  top: 100px;
+  transform: scale(1);
+  animation: ldio-ki33wig7gp8-c 4s linear infinite;
+}
+.loadingio-spinner-chunk-xz8ow3k0py {
+  width: 300px;
+  height: 200px;
+  margin-left: 50px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.ldio-ki33wig7gp8 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.ldio-ki33wig7gp8 div {
+  box-sizing: content-box;
+}
